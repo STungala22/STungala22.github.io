@@ -6,7 +6,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Sharlaine's Portfolio</title>
     <link href="bootstrap.css" rel="stylesheet">
+    <style>
+        .bg-image {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        main * {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
 </head>
+<body>
     <header>
         <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
             <div class="container-fluid">
@@ -44,16 +56,42 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <body>
         <div class="bg-image justify-content-center align-items-center" style="background-image: url(background.jpg); height: 100vh; width: 100%;">
             <div class="d-flex justify-content-center align-items-center h-100">
                 <h1 class="display-1 text-center" style="width:100%">Hi, I'm Sharlaine Tungala</h1>
                 <h2 class="display-3 text-center" style="width:100%">Computer Systems Technician - Software Support</h2>
             </div>
         </div>
-        <div>
-            <h1>Summary</h1>
+    </header>
+    <main>
+        <div class=" d-flex container-fluid justify-content-center align-items-center">
+            <div class="col">
+                <img src="me.jpg" class="rounded-circle float-left border-dark img-thumbnail">
+            </div>
+            <div class="col-8">
+                <h1 id="Summary">About Me</h1>
+                <h6>Computer Systems Technician - Software Support</h6>
+                <p class="mb-0">
+                    I'm Sharlaine Tungala, a Filipino Software Support graduate of Mohawk College.
+                    I have a degree in Chemical Engineering which also helped me develop my problem-solving skills.
+                </p>
+                <p class="mb-0">
+                    I am a fast learner and I am always eager to learn new things. I am also a team player and I am always willing to help others.
+                    I am an outgoing person who loves to decipher codes for fun.
+                    When I'm not coding, I'm either playing games or watching random movies in Netflix. I am also a food enthusiast and would love to try out new cuisines (although I have a small tolerance for spicy foods).
+                </p>
+                <p class="mb-0">
+                    I am currently looking for a job in the IT field and to further develop my skills in software development.
+                </p>
+                <div class="row">
+                    <div class="row row-cols-6">
+                        <img src="img2.jpg" class="rounded-circle float-left border-dark img-thumbnail">
+                        <img src="img1.png" class="rounded-circle float-left border-dark img-thumbnail">
+                        <img src="img3.jpg" class="rounded-circle float-left border-dark img-thumbnail">
+                        <img src="img4.jpg" class="rounded-circle float-left border-dark img-thumbnail">
+                    </div>
+                </div>
+            </div>
         </div>
         <div>
             <h1>Education</h1>
@@ -70,5 +108,7 @@
         <div>
             <h1>Contact Information</h1>
         </div>
-    </body>
+    </main>
+
+</body>
 </html>
