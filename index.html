@@ -16,23 +16,24 @@
             padding: 10px;
             margin: 10px;
         }
+        #languages img {
+            width: 100px;
+            height: 100px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+        <nav id="navbar" class="navbar navbar-expand-lg bg-light fixed-top" data-bs-theme="light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="https://STungala22.github.io">Sharlaine Tungala</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarColor03">
-                    <ul class="navbar-nav me-auto">
+                    <ul class="nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                Home
-                                <span class="visually-hidden">(current)</span>
-                            </a>
+                            <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#Summary">Summary</a>
@@ -53,7 +54,7 @@
                             <a class="nav-link" href="#Resume">Resume</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#ContactInformation">Contact Information</a>
+                            <a class="nav-link" href="#Contact">Contact Information</a>
                         </li>
                     </ul>
                 </div>
@@ -67,6 +68,7 @@
         </div>
     </header>
     <main>
+    <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
         <div class=" d-flex container-fluid justify-content-center align-items-center">
             <div class="col">
                 <img src="me.jpg" class="rounded-circle float-left border-dark img-thumbnail">
@@ -185,17 +187,81 @@
             </div>
         </div>
         <div>
-            <h1>Skills</h1>
+            <h1 id="Skills">Skills</h1>
+            <div id="languages" class="row">
+                <img src="html.png" class="rounded-circle float-left border-dark img-thumbnail">
+                <img src="js.png" class="rounded-circle float-left border-dark img-thumbnail">
+                <img src="php.png" class="rounded-circle float-left border-dark img-thumbnail">
+                <img src="java.png" class="rounded-circle float-left border-dark img-thumbnail">
+                <img src="python.png" class="rounded-circle float-left border-dark img-thumbnail">
+                <img src="cplus.png" class="rounded-circle float-left border-dark img-thumbnail">
+                <img src="csharp.png" class="rounded-circle float-left border-dark img-thumbnail">
+                <img src="sap.png" class="rounded-circle float-left border-dark img-thumbnail">
+            </div>
+        </div>
+        <div class="container-fluid">
+            <h1 id="Projects">Projects</h1>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="card mb-3" style="width:30%;">
+                    <h3 class="card-header">Asteroids Game</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">Asteroids Game</h5>
+                        <h6 class="card-subtitle text-muted">Powered by Unity</h6>
+                    </div>
+                    <img src="asteroids.png" class="card-img-top" alt="asteroids game">
+                    <div class="card-body">
+                        <p class="card-text">An asteroid game developed by unity. Survive the game by avoiding collisions with incoming asteroids</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Game Link</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        2 days ago
+                    </div>
+                </div>
+                <div class="card mb-3" style="width:30%;">
+                    <h3 class="card-header">Disney Princess Trivia</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">Disney Princess Trivia</h5>
+                        <h6 class="card-subtitle text-muted">Developed using Visual Code Studio</h6>
+                    </div>
+                    <img src="trivia.jpg" class="card-img-top" alt="asteroids game">
+                    <div class="card-body">
+                        <p class="card-text">Are you a disney princess at heart? Test your disney knowledge by taking this trivia quiz.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Game Link</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        20 days ago
+                    </div>
+                </div>
+                <div class="card mb-3" style="width:30%;">
+                    <h3 class="card-header">Car Rush</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">Car Rush</h5>
+                        <h6 class="card-subtitle text-muted">Created using SVG elements</h6>
+                    </div>
+                    <img src="car.jpg" class="card-img-top" alt="asteroids game">
+                    <div class="card-body">
+                        <p class="card-text">In a hurry? Avoid all cars you encounter. The longer you play, the harder it gets.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Game Link</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        50 days ago
+                    </div>
+                </div>
+            </div>
         </div>
         <div>
-            <h1>Projects</h1>
+            <h1 id="Resume">Resume</h1>
         </div>
         <div>
-            <h1>Resume</h1>
+            <h1 id="Contact">Contact Information</h1>
         </div>
-        <div>
-            <h1>Contact Information</h1>
-        </div>
+    </div>
 </main>
 
 </body>
